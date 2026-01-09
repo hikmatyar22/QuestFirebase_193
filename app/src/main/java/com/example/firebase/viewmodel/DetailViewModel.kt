@@ -54,7 +54,6 @@ class DetailViewModel(
         }
     }
 
-
     suspend fun hapusSatuSiswa() {
         try {
             repositorySiswa.hapusSatuSiswa(idSiswa)
