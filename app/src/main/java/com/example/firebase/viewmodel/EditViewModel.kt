@@ -15,7 +15,6 @@ import com.example.firebase.repositori.RepositorySiswa
 import com.example.firebase.view.route.DestinasiDetail
 import kotlinx.coroutines.launch
 
-
 class EditViewModel(
     savedStateHandle: SavedStateHandle,
     private val repositorySiswa: RepositorySiswa
@@ -41,7 +40,6 @@ class EditViewModel(
                 isEntryValid = validasiInput(detailSiswa)
             )
     }
-
     private fun validasiInput(
         uiState: DetailSiswa = uiStateSiswa.detailSiswa
     ): Boolean {
@@ -49,7 +47,6 @@ class EditViewModel(
             nama.isNotBlank() && alamat.isNotBlank() && telpon.isNotBlank()
         }
     }
-
     suspend fun editSatuSiswa() {
         if (validasiInput(uiStateSiswa.detailSiswa)) {
             try {
